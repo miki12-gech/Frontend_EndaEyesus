@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
-import { Home, BookOpen, Bell, User, LogOut } from "lucide-react";
+import { Home, BookOpen, Bell, User, LogOut, Shield } from "lucide-react";
 import { useUserStore } from "@/store/userStore";
 
 const navItems = [
@@ -10,6 +10,7 @@ const navItems = [
     { href: "/dashboard/my-class", label: "My Class", icon: BookOpen },
     { href: "/dashboard/announcements", label: "Announcements", icon: Bell },
     { href: "/dashboard/profile", label: "Profile", icon: User },
+    { href: "/dashboard/agent", label: "Agent Control", icon: Shield },
 ];
 
 export function Sidebar() {
@@ -53,8 +54,8 @@ export function Sidebar() {
                             key={href}
                             href={href}
                             className={`flex items-center gap-3 px-4 py-3 rounded-xl text-sm font-medium transition-all duration-200 group ${isActive
-                                    ? "bg-white/10 dark:bg-[#D4AF37]/10 text-[#C9A227] dark:text-[#D4AF37]"
-                                    : "text-white/70 dark:text-[#B0B0B0] hover:bg-white/8 dark:hover:bg-[#1E4D3A]/40 hover:text-white dark:hover:text-[#F5F5F5]"
+                                ? "bg-white/10 dark:bg-[#D4AF37]/10 text-[#C9A227] dark:text-[#D4AF37]"
+                                : "text-white/70 dark:text-[#B0B0B0] hover:bg-white/8 dark:hover:bg-[#1E4D3A]/40 hover:text-white dark:hover:text-[#F5F5F5]"
                                 }`}
                             aria-current={isActive ? "page" : undefined}
                         >

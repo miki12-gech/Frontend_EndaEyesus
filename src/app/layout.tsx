@@ -10,7 +10,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Enda Eyesus — MU Fellowship",
+  title: "እንዳ ኢየሱስ ግቢ ጉባኤ",
   description:
     "Ethiopian Orthodox Tewahedo Student Fellowship at Mekelle University.",
 };
